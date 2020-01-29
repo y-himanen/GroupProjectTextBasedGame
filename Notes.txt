@@ -1,7 +1,7 @@
 Kitchen: fridge (vampire), trash can (apple), oven (roast chicken), chopsticks
 Storage room: stack of boxes (zombie) suitcase (sudoku book, book of dad jokes), flashlight, baseball bat
 Laundry room: drier(mummy) cabinet (bleach and brush), scissors
-Basement: trunk (ghost), hammer, chainsaw, oil, telephone
+Basement: trunk (ghost), hammer, chainsaw, oil can, telephone
 
 
 openExitDoor -method: keycount == 4 --> open exit
