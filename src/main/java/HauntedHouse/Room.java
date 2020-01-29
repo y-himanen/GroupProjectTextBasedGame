@@ -11,6 +11,16 @@ public abstract class Room {
     Should this be an abstract class/interface?
      */
 
+    public static String location = "corridor";
+
+    public void setLocation(String location) {
+        location = location;
+    }
+
+    public String getLocations() {
+        return location;
+    }
+
     abstract void introduceRoom();
 
     public void actionsInTheRoom() {

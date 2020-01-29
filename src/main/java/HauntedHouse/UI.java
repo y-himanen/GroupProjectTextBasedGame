@@ -37,24 +37,31 @@ public class UI {
                     break;
                 case "go":
                     System.out.println("Where do you want to go?");
-                    String whereTo = userInput.nextLine();
+                    String whereTo = userInput.nextLine().trim().toLowerCase();
                     switch (whereTo) {
                         case "kitchen":
-                            Kitchen kitchen = new Kitchen();
+                            Room kitchen = new Kitchen();
+                            kitchen.setLocation("kitchen");
                             kitchen.introduceRoom();
                             //method here
                             break;
                         case "storage room":
+                            Room storageRoom = new StorageRoom();
+                            storageRoom.setLocation("storage room");
                             //method here
                             break;
                         case "basement":
+                            Room basement = new Basement();
+                            basement.setLocation("basement");
                             //method here
                             break;
                         case "laundry room":
+                            Room laundryRoom = new LaundryRoom();
+                            laundryRoom.setLocation("laundry room");
                             //method here
                             break;
                         case "corridor":
-                            //method here
+                            //method here - do we need to add a corridor?
                             break;
                         case "exit":
                             if (InventoryStuff.getNumberOfKeys() == 4) {
@@ -64,7 +71,7 @@ public class UI {
                             else { System.out.println("You don't have enough keys to open the door. You're trapped."); }
                             break;
                         default:
-                            System.out.println("That's not a command. Are you still drunk? Please try again.");
+                            System.out.println("You can't go there.");
                             break;
 
                     }

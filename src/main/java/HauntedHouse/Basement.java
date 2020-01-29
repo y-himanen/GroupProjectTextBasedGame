@@ -7,6 +7,6 @@ public class Basement extends Room {
 
     @Override
     public void introduceRoom() {
-        System.out.println("You walk down steep stairs into a cold damp basement.");
+        System.out.println("You walk down a steep staircase into a cold damp basement.");
     }
 }
